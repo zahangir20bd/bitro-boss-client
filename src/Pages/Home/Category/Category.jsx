@@ -23,48 +23,49 @@ const Category = () => {
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
-        centeredSlides={true}
+        // centeredSlides={true}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper mb-28 "
+        className="mySwiper mb-28 mt-20"
       >
         <SwiperSlide>
-          <img src={slide1} alt="" />
-          <p className="text-4xl text-center -mt-10 text-black font-serif uppercase">
+          <img className="w-full mx-auto" src={slide1} alt="" />
+          <p className="text-4xl  text-center w-full -mt-10 text-white font-serif uppercase">
             Salads
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide2} alt="" />
+          <img className="w-full mx-auto"  src={slide2} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Pizza
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide3} alt="" />
+          <img className="w-full mx-auto"  src={slide3} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Soup
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide4} alt="" />
+          <img className="w-full mx-auto"  src={slide4} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Desserts
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide5} alt="" />
+          <img className="w-full mx-auto"  src={slide5} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Salads
           </p>
         </SwiperSlide>
       </Swiper>
+      <div className="flex justify-center items-center ">
       <div className="relative">
-        <img src={backgroundImage} alt="" />
-        <div className="w-10/12 h-10/12 absolute top-1/4 left-28  bg-white p-12">
-          <h2>Bistro Boos</h2>
+        <img src={backgroundImage} alt="Image" className="w-full" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-16 px-20 w-3/4 bg-white text-center">
+        <h2 className="text-3xl text-center font-bold mb-10">Bistro Boos</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
             alias rerum odio, delectus sequi optio rem recusandae deleniti
@@ -75,6 +76,10 @@ const Category = () => {
             dolore, atque ipsum ea dicta corrupti consequatur?
           </p>
         </div>
+      </div>
+    </div>
+      <div className="w-full bg-black mt-32">
+        <h3 className="text-3xl text-center text-white py-20 font-serif font-bold">Call Us: +88 01611391706</h3>
       </div>
     </section>
   );
