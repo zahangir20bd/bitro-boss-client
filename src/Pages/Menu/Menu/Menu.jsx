@@ -43,7 +43,7 @@ const Menu = () => {
       <section className="mb-12 mt-28">
         <MenuCategory
           items={pizza}
-          title="Pizza"
+          title="pizza"
           coverImg={pizzaImg}
         ></MenuCategory>
       </section>
@@ -52,7 +52,7 @@ const Menu = () => {
       <section className="mb-12 mt-28">
         <MenuCategory
           items={salad}
-          title="Salad"
+          title="salad"
           coverImg={saladImg}
         ></MenuCategory>
       </section>
@@ -61,7 +61,7 @@ const Menu = () => {
       <section className="mb-12 mt-28">
         <MenuCategory
           items={soup}
-          title="Soup"
+          title="soup"
           coverImg={soupImg}
         ></MenuCategory>
       </section>
@@ -70,7 +70,7 @@ const Menu = () => {
       <section className="mb-12 mt-28">
         <MenuCategory
           items={desserts}
-          title="Dessert"
+          title="dessert"
           coverImg={dessertImg}
         ></MenuCategory>
       </section>
@@ -79,7 +79,7 @@ const Menu = () => {
       <section className="mb-12 mt-28">
         <MenuCategory
           items={drinks}
-          title="Drinks"
+          title="drinks"
           coverImg={drinksImg}
         ></MenuCategory>
       </section>
