@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { Parallax } from "react-parallax";
 
 import slide1 from "../../../assets/home/slide1.jpg";
 import slide2 from "../../../assets/home/slide2.jpg";
@@ -37,49 +38,59 @@ const Category = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full mx-auto"  src={slide2} alt="" />
+          <img className="w-full mx-auto" src={slide2} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Pizza
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full mx-auto"  src={slide3} alt="" />
+          <img className="w-full mx-auto" src={slide3} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Soup
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full mx-auto"  src={slide4} alt="" />
+          <img className="w-full mx-auto" src={slide4} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Desserts
           </p>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full mx-auto"  src={slide5} alt="" />
+          <img className="w-full mx-auto" src={slide5} alt="" />
           <p className="text-4xl text-center -mt-10 text-white font-serif uppercase">
             Salads
           </p>
         </SwiperSlide>
       </Swiper>
-      <div className="flex justify-center items-center ">
-      <div className="relative">
-        <img src={backgroundImage} alt="Image" className="w-full" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-16 px-20 w-3/4 bg-white text-center">
-        <h2 className="text-3xl text-center font-bold mb-10">Bistro Boos</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            alias rerum odio, delectus sequi optio rem recusandae deleniti
-            libero distinctio dolores? Repellendus laboriosam sequi delectus
-            maxime est soluta saepe magni non dolorum quod. Ad alias sequi esse,
-            sapiente possimus eaque ipsam voluptates cupiditate illum laudantium
-            perspiciatis deserunt natus maxime accusamus velit et maiores
-            dolore, atque ipsum ea dicta corrupti consequatur?
-          </p>
+
+      <Parallax
+        blur={{ min: -15, max: 15 }}
+        bgImage={backgroundImage}
+        bgImageAlt="the dog"
+        strength={-200}
+      >
+        <div className="hero h-[500px]">
+          <div className="hero-overlay h-1/2 w-8/12 bg-white"></div>
+          <div className="text-center ">
+            <div className="w-3/5 mx-auto">
+              <h1 className="mb-5 text-3xl font-bold font-serif">
+                Bistro Boss
+              </h1>
+              <p className="mb-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique alias rerum odio, delectus sequi optio rem recusandae
+                deleniti libero distinctio dolores? Repellendus laboriosam sequi
+                delectus maxime est soluta saepe magni non dolorum quod.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </Parallax>
+
       <div className="w-full bg-black mt-32">
-        <h3 className="text-3xl text-center text-white py-20 font-serif font-bold">Call Us: +88 01611391706</h3>
+        <h3 className="text-3xl text-center text-white py-20 font-serif font-bold">
+          Call Us: +88 01611391706
+        </h3>
       </div>
     </section>
   );

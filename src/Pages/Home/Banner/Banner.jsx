@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -12,7 +11,7 @@ import img6 from "../../../assets/home/06.png";
 
 const Banner = () => {
   return (
-    <div className="mb-16">
+    <div>
       <Carousel>
         <div>
           <img src={img1} />
