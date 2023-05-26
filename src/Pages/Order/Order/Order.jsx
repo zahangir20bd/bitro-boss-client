@@ -4,7 +4,6 @@ import coverImg from "../../../assets/shop/banner2.jpg";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import useMenu from "../../../hooks/useMenu";
-import FoodCard from "../../Shared/FoodCard/FoodCard";
 import OrderTab from "../OrderTab/OrderTab";
 
 const Order = () => {
@@ -15,7 +14,6 @@ const Order = () => {
   const pizza = menu.filter((item) => item.category === "pizza");
   const soup = menu.filter((item) => item.category === "soup");
   const drinks = menu.filter((item) => item.category === "drinks");
-  const offered = menu.filter((item) => item.category === "offered");
 
   return (
     <div>
@@ -47,7 +45,6 @@ const Order = () => {
           </TabPanel>
         </Tabs>
       </div>
-      <h2>Order Food</h2>
     </div>
   );
 };

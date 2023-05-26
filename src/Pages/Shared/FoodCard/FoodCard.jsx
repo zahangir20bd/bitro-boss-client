@@ -4,7 +4,7 @@ const FoodCard = ({ item }) => {
   const { image, price, recipe, name } = item;
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl mx-auto">
+    <div className="card w-96 bg-base-100 shadow-xl mx-auto rounded-none">
       <figure>
         <img src={image} alt="Food Image" />
       </figure>

@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="grid grid-cols-1 md:grid-cols-2 p-10 bg-neutral text-neutral-content">
-        <div className="text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2  text-neutral-content">
+        <div className="text-center  bg-slate-800 p-10">
           <h3 className="text-3xl my-6">CONTACT US</h3>
           <p>123 ABS Street, Uni 21, Bangladesh</p>
           <p>+88 123456789</p>
           <p>Mon - Fri: 08:00 - 22:00</p>
           <p>Sat - Sun: 10:00 - 23:00</p>
         </div>
-        <div className="text-center">
+        <div className="text-center bg-slate-900 p-10">
           <h3 className="text-3xl my-6">Follow US</h3>
           <p className="mb-5">Join Us On Social Media</p>
           <div className="flex justify-center gap-3">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer footer-center p-4 bg-neutral text-neutral-content">
+      <div className="footer footer-center p-4 bg-slate-950 text-neutral-content">
         <p>Copyright © 2023 - All right reserved by Bistro Boss Restaurant</p>
       </div>
     </footer>
